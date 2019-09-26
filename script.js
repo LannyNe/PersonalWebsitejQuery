@@ -13,7 +13,15 @@ $(document).ready(function() {
     },
     function(){
         $(this).html("<h3>My Background</h3>");
+    });
+    $("#future").hover(
+    function(){
+        $(this).html("<h3>Click to fade.</h3>");
+    },
+    function(){
+        $(this).html("<h3>My Future</h3>");
     })
+
 
 // change background depending on user's time
 var datetoday = new Date();
